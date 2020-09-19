@@ -44,7 +44,6 @@ public class ToStringTest {
         for (Pair<String, String> pair : pairs) {
             String path = pair.getKey();
             String controller = pair.getValue();
-
             router.add(path, controller);
             expectedString.append(path).append(controller).append('\n');
         }

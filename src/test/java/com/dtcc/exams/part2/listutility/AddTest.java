@@ -25,7 +25,6 @@ public class AddTest {
         test(null);
     }
 
-
     private void test(Integer valueToAdd){
         // given
         ListUtility utility = new ListUtility();
