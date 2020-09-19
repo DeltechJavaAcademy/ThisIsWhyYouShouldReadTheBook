@@ -1,14 +1,15 @@
 package com.dtcc.exams.part3;
 
-public class Bird {
+public abstract class Bird {
+
+    private int speed;
+    private String move;
 
     public String move() {
-        return null;
+        return "fly";
     }
 
-    public void setMigrationMonth(String expected) {
-
-    }
+    public void setMigrationMonth(String expected) {}
 
     public String getMigrationMonth() {
         return null;

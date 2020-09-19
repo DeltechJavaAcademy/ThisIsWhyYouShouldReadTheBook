@@ -30,8 +30,8 @@ public class RangeTest {
         test(start, stop, expected);
     }
 
-
     private void test(int start, int stop, Integer[] expected) {
+
         // given
         IntegerArrayUtilities integerArrayUtilities = new IntegerArrayUtilities();
 
@@ -40,6 +40,6 @@ public class RangeTest {
 
         // then
         TestUtils.assertArrayEquals(expected, actual);
-    }
 
+    }
 }
