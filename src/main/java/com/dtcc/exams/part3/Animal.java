@@ -6,4 +6,6 @@ public interface Animal {
     int getSpeed();
     String color();
 
+
+
 }
