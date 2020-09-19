@@ -1,5 +1,6 @@
 package com.dtcc.exams.part2;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.lang.Integer;
 import java.util.Arrays;
@@ -16,11 +17,21 @@ public class ArrayUtility {
     }    
 
     public Integer[] rotate(Integer[] array, int index) {
-//        for(int i = 0; i< index; i++){
-//
-//        }
-    Integer[] returnArr = new Integer[0];
-    return returnArr;
+        Integer[] result = new Integer[array.length];
+
+
+        int j=0;
+        for(int i=index; i<array.length; i++){
+            result[j] = array[i];
+            j++;
+        }
+        for(int i=0; i < index; i++){
+            result[j] = array[i];
+            j++;
+        }
+
+//        System.arraycopy( result, 0, array, 0, array.length );
+        return result;
 
     }
 
