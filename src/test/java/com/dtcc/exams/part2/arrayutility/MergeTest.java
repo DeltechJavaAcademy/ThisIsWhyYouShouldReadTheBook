@@ -5,6 +5,8 @@ import com.dtcc.exams.part2.ArrayUtility;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.ArrayList;
+
 public class MergeTest {
 
     private ArrayUtility utility;
