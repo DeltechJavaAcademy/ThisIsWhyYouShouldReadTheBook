@@ -7,22 +7,22 @@ import org.junit.Test;
 public class AddTest {
     @Test
     public void test1() {
-        test(1);
+        this.test(1);
     }
 
     @Test
     public void test2() {
-        test(2);
+        this.test(2);
     }
 
     @Test
     public void test3() {
-        test(3);
+        this.test(3);
     }
 
     @Test
     public void test4() {
-        test(null);
+        this.test(null);
     }
 
 

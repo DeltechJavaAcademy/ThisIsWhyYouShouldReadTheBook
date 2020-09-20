@@ -1,21 +1,35 @@
 package com.dtcc.exams.part1;
 
+import java.util.ArrayList;
+
 public class IntegerArrayUtilities {
 
     public Boolean hasEvenLength(Integer[] array) {
-        return null;
+        int arrayLength = array.length;
+        if(arrayLength % 2 == 0){
+            return true;
+        }
+        else return false;
     }
 
     public Integer[] range(int start, int stop) {
-        return null;
+       ArrayList<Integer> arr = new ArrayList<Integer>();
+         for(int i = start; i < stop + 1; i++){
+           arr.add(i);
+        }
+         return arr.toArray(new Integer[0]);
     }
 
     public Integer getSumOfFirstTwo(Integer[] array) {
-        return null;
+        int sum = 0;
+            sum = array[0] + array[1];
+        return sum;
     }
 
     public Integer getProductOfFirstTwo(Integer[] array) {
-        return null;
+
+           return array[array.length-1] * array[array.length-2];
+
     }
 
 }
