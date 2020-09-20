@@ -29,10 +29,14 @@ public class ListUtility {
     }
 
     public String join() {
-        
-        String result = String.join(", ", (CharSequence) list);
-        return result;
+        String joined="";
+        for(int i=0;i< list.size();i++){
+            joined += list.get(i);
+           if(i<=list.size()-2) {joined += ", "; }
+        }
+        return joined;
     }
+
 
     public Integer mostCommon() {
         return null;
