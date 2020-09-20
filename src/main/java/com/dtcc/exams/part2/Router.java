@@ -1,13 +1,15 @@
 package com.dtcc.exams.part2;
 
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 
 public class Router {
     //<PATH, CONTROLLER>
-    Map<String,String> routerMap = new HashMap<>();
+    Map<String,String> routerMap = new LinkedHashMap<>();
 
     public void add(String path, String controller) {routerMap.put(path, controller);}
+
     public Integer size() {return routerMap.size();}
 
     public String getController(String path) {
@@ -19,15 +21,14 @@ public class Router {
         routerMap.put(path, studentController);
     }
 
-    public void remove(String path) {
-        routerMap.remove(path);
+    public void remove(String path) {routerMap.remove(path);
     }
 
     public String toString(){
         String temp_string="";
 
         //Entries, each entry
-        for(Map.Entry m:this.routerMap.entrySet()){
+        for(Map.Entry m:routerMap.entrySet()){
             String key = (String)m.getKey();
             String value = (String)m.getValue();
             temp_string += (key + " -> " + value + "\n");
