@@ -1,20 +1,30 @@
 package com.dtcc.exams.part1;
 
 public class DelTechConcatenator {
-
+private double input;
     public DelTechConcatenator(Integer input) {
+   this.input =input;
     }
 
     public Boolean isDel() {
-        return null;
+        if(input % 3 == 0){
+            return true;
+        }else
+            return false;
     }
 
     public Boolean isTech() {
-        return null;
+        if(input % 5 == 0){
+            return true;
+        }else
+        return false;
     }
 
     public Boolean isDelTech() {
-        return null;
+        if(input % 3 == 0 && input % 5 == 0){
+            return true;
+        }else
+            return false;
     }
 
 }
