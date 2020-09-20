@@ -11,7 +11,7 @@ public class RedRobin extends Bird implements Animal {
 
     @Override
     public String color() {
-        return "brown";
+        return "red";
     }
 
     public void setMigrationMonth(String month){

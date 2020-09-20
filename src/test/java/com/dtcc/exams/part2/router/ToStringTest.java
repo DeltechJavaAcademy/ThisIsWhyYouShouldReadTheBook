@@ -5,6 +5,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class ToStringTest {
+
     @Test
     public void test1() {
         test(
@@ -36,7 +37,6 @@ public class ToStringTest {
                 new Pair<>("/instructors", "InstructorController"));
     }
 
-    @Test
     public void test(Pair<String, String>... pairs) {
         // given
         StringBuilder expectedString = new StringBuilder();
@@ -46,7 +46,7 @@ public class ToStringTest {
             String controller = pair.getValue();
 
             router.add(path, controller);
-            expectedString.append(path).append(controller).append('\n');
+            expectedString.append(path).append(" -> ").append(controller).append('\n');
         }
 
 
