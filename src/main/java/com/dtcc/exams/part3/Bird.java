@@ -1,9 +1,9 @@
 package com.dtcc.exams.part3;
 
-public class Bird {
+public abstract class Bird {
 
     public String move() {
-        return null;
+        return "fly";
     }
 
     public void setMigrationMonth(String expected) {

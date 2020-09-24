@@ -3,19 +3,34 @@ package com.dtcc.exams.part1;
 public class IntegerArrayUtilities {
 
     public Boolean hasEvenLength(Integer[] array) {
-        return null;
+        boolean hasEvenLength = false;
+        if(array.length % 2 == 0){
+            hasEvenLength = true;
+        }
+        return hasEvenLength;
     }
 
     public Integer[] range(int start, int stop) {
-        return null;
+        Integer[] range = new Integer[(stop - (start-1))];
+        int j = 0;
+        for(int i = start; i <= stop; i++){
+            range[j] = i;
+            j++;
+        }
+        return range;
     }
 
     public Integer getSumOfFirstTwo(Integer[] array) {
-        return null;
+        Integer sum;
+        sum = array[0] + array[1];
+        return sum;
     }
 
     public Integer getProductOfFirstTwo(Integer[] array) {
-        return null;
+        Integer product;
+
+        product = array[array.length-2] * array[array.length-1];
+        return product;
     }
 
 }
