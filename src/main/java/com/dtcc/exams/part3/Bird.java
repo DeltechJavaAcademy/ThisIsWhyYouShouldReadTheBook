@@ -1,8 +1,18 @@
 package com.dtcc.exams.part3;
 
-public class Bird {
+public abstract class Bird implements Animal{
 
     public String move() {
+        return "fly";
+    }
+
+    @Override
+    public int getSpeed() {
+        return 0;
+    }
+
+    @Override
+    public String color() {
         return null;
     }
 
@@ -14,4 +24,5 @@ public class Bird {
         return null;
     }
 
+    public abstract int speed();
 }
