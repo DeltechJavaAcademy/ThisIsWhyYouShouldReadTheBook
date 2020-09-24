@@ -3,19 +3,37 @@ package com.dtcc.exams.part1;
 public class BasicUtilities {
 
     public Boolean isGreaterThan5(Integer value) {
-        return null;
+        boolean isGreaterThan5 = false;
+        if( value > 5 ){
+            isGreaterThan5 = true;
+        }
+        return isGreaterThan5;
     }
 
     public Boolean isLessThan7(Integer value) {
-        return null;
+        boolean isLessThan7 = false;
+        if( value < 7 ){
+            isLessThan7 = true;
+        }
+        return isLessThan7;
     }
 
     public Boolean isBetween5And7(Integer valueToEvaluate) {
-        return null;
+        boolean isBetween5And7 = false;
+        if( valueToEvaluate >= 5 && valueToEvaluate <= 7){
+            isBetween5And7 = true;
+        }
+       return isBetween5And7;
     }
 
     public Boolean startsWith(String string, Character character) {
-        return null;
+        boolean startsWith = false;
+        String firstLetter = string.charAt(0) + "";
+        String strCharacter = character + "";
+        if(firstLetter.equalsIgnoreCase(strCharacter)){
+            startsWith = true;
+        }
+        return startsWith;
     }
 
 }
